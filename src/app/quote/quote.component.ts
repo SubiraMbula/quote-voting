@@ -34,7 +34,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[i].upvotes++;
   }
   downvoteButton(i){
-    this.quotes[i].downvotes++;
+    this.quotes[i].downvotes--;
   }
 
   addNewQuote(quote) {

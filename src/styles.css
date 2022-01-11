@@ -2,5 +2,12 @@
     display: flex;
 }
 *{
-   background-color: yellow;
+   background-color: rgb(199, 127, 233);
+}
+.quote1{
+    display: flex;
+    position: relative;
+}
+.quote2{
+    display: flex;
 }

@@ -1,6 +1,9 @@
-# Trial2
+# Quote-app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+
+## Description
+This project is designed for one to upvote on inspirational quotes or downvote on them and also delete a quote that seems not at all helpfull to them or add their own quote.
 
 ## Development server
 
@@ -25,3 +28,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Authour
+Subira Mbula
+
+## contact
+You can reach okut to e via my email  subira.savali@student.moringaschool.com

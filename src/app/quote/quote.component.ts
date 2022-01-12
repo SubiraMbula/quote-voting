@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
    new Quote(3,'Inspiration','He was the light at the end of the road..,Sometimes later becomes never. ...', 'clinton391', new Date(2020,5,14), 0,0)
  ]
 
-   deleteQuote(isComplete ,index){
+   deleteQuote(isComplete: any, index: number){
      if(isComplete){
        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}..?`)
 
@@ -23,21 +23,21 @@ export class QuoteComponent implements OnInit {
      }
    }
 
-  toggleDetails(index){
+  toggleDetails(index: any){
     this.quotes[index].showDescription =! this.quotes[index].showDescription;
   }
 
   upvotes:number = 0;
   downvotes: number = 0;
 
-  upvoteButton(i){
+  upvoteButton(i: number){
     this.quotes[i].upvotes++;
   }
-  downvoteButton(i){
+  downvoteButton(i: number){
     this.quotes[i].downvotes--;
   }
 
-  addNewQuote(quote) {
+  addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     this.quotes.unshift(quote);

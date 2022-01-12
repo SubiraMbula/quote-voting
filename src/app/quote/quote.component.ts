@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
    new Quote(3,'Inspiration','He was the light at the end of the road..,Sometimes later becomes never. ...', 'clinton391', new Date(2020,5,14), 0,0)
  ]
 
-   deleteQuote(isComplete, index){
+   deleteQuote(isComplete ,index){
      if(isComplete){
        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}..?`)
 

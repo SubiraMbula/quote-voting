@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuoteDetailComponent } from './quote-detail.component';
+import {  QuoteDetailComponent } from './quote-detail.component';
 
 describe('QuoteDetailComponent', () => {
   let component: QuoteDetailComponent;

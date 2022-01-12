@@ -6,6 +6,8 @@ import { Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  newQuotes!:Quote;
+
 
    quotes: Quote[] = [
    new Quote(1,'Motivation','Push yourself, because no one else is going to do it for you..', 'martin lutherking', new Date(2020,5,14), 0,0),
@@ -37,10 +39,10 @@ export class QuoteComponent implements OnInit {
     this.quotes[i].downvotes--;
   }
 
-  addNewQuote(quote: Quote) {
+  addNewQuote() {
     let quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
-    this.quotes.unshift(quote);
+    this.newQuotes.id = quoteLength + 1;
+    this.quotes.push(this.newQuotes);
   }
 
   constructor() { }
